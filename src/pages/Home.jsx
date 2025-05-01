@@ -1,25 +1,16 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
     <div className="home">
-      {/* Navigation Bar */}
-      <nav className="navbar">
-        <div className="logo">duckies</div>
-        <ul className="nav-links">
-          <li>Shop</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Custom</li>
-        </ul>
-      </nav>
-
       {/* Hero Section */}
       <section className="hero-section">
         <h1 className="hero-title">duckies</h1>
         <p className="tagline">find your perfect duck.</p>
-        <button className="shop-button">shop now</button>
+        <Link to="/shop">
+          <button className="shop-button">shop now</button>
+        </Link>
       </section>
 
       {/* New Arrivals */}
