@@ -7,12 +7,26 @@
     <style>
       body { font-family: Arial, sans-serif; padding: 20px; }
     </style>
-    <script type="module" crossorigin src="/assets/index-Dc9mRhpC.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-C2t4nGus.css">
+    <!-- Handle SPA routing on GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <script type="module" crossorigin src="/duckies2/assets/index-MMMN_ROX.js"></script>
+    <link rel="stylesheet" crossorigin href="/duckies2/assets/index-C2t4nGus.css">
   </head>
   <body>
     <div id="root"></div>
-    
-    <!-- We'll use main.jsx for our React app -->
   </body>
 </html>
